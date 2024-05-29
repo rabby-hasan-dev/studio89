@@ -11,9 +11,9 @@ import icon6 from '../../../assets/icon-6.png';
 
 const Services = () => {
     return (
-        <div className=" md:py-24 py-16">
+        <div className=" md:py-24 py-16 md:px-8 text-white">
 
-            <div className="grid grid-cols-2 gap-10  ">
+            <div className="grid lg:grid-cols-2 gap-10  ">
                 <div>
                     <h2 className="text-4xl font-bold">The only place to learn <br></br> <span className=" text-green-700">everything</span></h2>
                     <p className="text-xl">Go to the section of your choice to learn anything on any topic</p>
@@ -21,6 +21,7 @@ const Services = () => {
                         src={programmers}
                         width={549}
                         height={549}
+                        className="my-4"
                     ></Image>
                 </div>
 

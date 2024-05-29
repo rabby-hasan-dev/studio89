@@ -8,7 +8,7 @@ const Navbar = () => {
     const navOptions = <>
         <li><Link href="/">Home</Link></li>
         <li><Link href="/services">Services</Link></li>
-        <li> <Link href='/classes'>Package</Link></li>
+        <li> <Link href='#'>Package</Link></li>
 
     </>
 
@@ -17,7 +17,7 @@ const Navbar = () => {
         <>
             <div className="navbar bg-slate-300">
                 <div className="navbar-start">
-                    <a className="btn btn-ghost text-xl">Studion89</a>
+                    <a className="btn btn-ghost text-xl font-bold uppercase">Studio89</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 uppercase">

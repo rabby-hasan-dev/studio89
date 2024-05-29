@@ -2,11 +2,13 @@ import Link from 'next/link';
  
 const NotFound=()=> {
   return (
-    <div className='text-center'>
-      <h2>Not Found</h2>
-      <p>Could not find requested resource . Please! </p>
+   <div className='p-40 my-10'> 
+     <div className='flex flex-col justify-center items-center text-white'>
+      <h2 className='text-4xl'>Not Found</h2>
+      <p className='my-8'>Could not find requested resource . Please! </p>
       <Link href="/"> <button className='btn'>Return Home</button> </Link>
     </div>
+   </div>
   )
 }
 

@@ -2,7 +2,7 @@
 import './CommonSlide';
 const CommonSlide = () => {
     return (
-        <div className="p-20">
+        <div className="lg:p-20">
             <div className="hero  h-[400px] rounded-2xl" >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">

@@ -24,9 +24,9 @@ const Footer = () => {
                     <nav className="uppercase">
 
                         <a className="link link-hover">Contact Us</a>
-                        <a className="link link-hover">house:2/2 pallabi,mirpur 11.5 </a>
-                        <a className="link link-hover">dhaka 1216</a>
-                        <a className="link link-hover">mobile number:0123456789</a>
+                        <a className="link link-hover text-right">house:2/2 pallabi,mirpur 11.5 <br />dhaka 1216 </a>
+
+                        <a className="link link-hover">mobile number: 0123456789</a>
                     </nav>
 
                 </div>
