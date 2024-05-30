@@ -9,10 +9,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const CommonSlide = ({ data, category }) => {
     const screenSize = window.screen.width;
-    let slidesPerViewIndex = 4;
+    let slidesPerViewIndex;
 
     if (screenSize <= 640) {
         slidesPerViewIndex = 1;
+    } else {
+        slidesPerViewIndex = 4;
     }
 
     return (

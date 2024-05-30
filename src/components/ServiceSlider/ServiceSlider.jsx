@@ -11,7 +11,7 @@ const ServiceSlider = () => {
     useEffect(() => {
         const dataFetching = async () => {
             try {
-                const res = await fetch('service.json');
+                const res = await fetch('/service.json');
                 const data = await res.json();
                 setSeviceData(data)
 

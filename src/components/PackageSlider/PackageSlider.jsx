@@ -12,7 +12,7 @@ const PackageSlider = () => {
     useEffect(() => {
         const dataFetching = async () => {
             try {
-                const res = await fetch('packageData.json');
+                const res = await fetch('/packageData.json');
                 const data = await res.json();
                 setSeviceData(data)
 
