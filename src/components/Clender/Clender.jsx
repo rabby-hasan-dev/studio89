@@ -7,9 +7,9 @@ const Clender = () => {
     const [value, onChange] = useState(new Date());
 
     return (
-        <div className="p-6 lg:p-20">
+        <div className="p-6 lg:m-20">
             <div className="mx-auto lg:flex justify-center items-center gap-10  ">
-                <div className="clender-hero text-white">
+                <div className="clender-hero ">
                     <h2 className="uppercase text-3xl font-bold"> Schedule every meeting faster</h2>
                     <p className="text-xl my-6">If you want to success follow shedule in life</p>
                     <button className="btn uppercase"> Follow Shedule</button>

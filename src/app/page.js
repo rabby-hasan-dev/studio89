@@ -1,19 +1,17 @@
 import Clender from "@/components/Clender/Clender";
-import CommonSlide from "@/components/CommonSlide/CommonSlide";
 import OfficeView from "@/components/OfficeView/OfficeView";
-import Slider from "@/components/Slider/Slider";
+import PackageSlider from "@/components/PackageSlider/PackageSlider";
+import ServiceSlider from "@/components/ServiceSlider/ServiceSlider";
 
 
 const page = () => {
   return (
     <div>
-      <Slider></Slider>
-      <div className="divider divider-info"></div>
-      <CommonSlide></CommonSlide>
+      <ServiceSlider></ServiceSlider>
       <div className="divider divider-info"></div>
       <Clender></Clender>
       <div className="divider divider-info"></div>
-      <CommonSlide></CommonSlide>
+      <PackageSlider></PackageSlider>
       <div className="divider divider-info"></div>
       <OfficeView></OfficeView>
 

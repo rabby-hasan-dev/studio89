@@ -11,7 +11,7 @@ import icon6 from '../../../assets/icon-6.png';
 
 const Services = () => {
     return (
-        <div className=" md:py-24 py-16 md:px-8 text-white">
+        <div className=" md:py-24 py-16 md:px-8 ">
 
             <div className="grid lg:grid-cols-2 gap-10  ">
                 <div>

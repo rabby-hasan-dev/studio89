@@ -1,0 +1,32 @@
+[
+    {
+        "id": "01",
+        "name": "Live Streaming",
+        "description": "Broadcast live events or presentations to a remote audience in real-time.",
+        "category": "services"
+    },
+    {
+        "id": "02",
+        "name": "Podcast",
+        "description": "Create and distribute audio programs for listeners to subscribe and enjoy on-demand.",
+        "category": "services"
+    },
+    {
+        "id": "03",
+        "name": "Social Media Content",
+        "description": "Develop engaging content (text, images, videos) for promoting your brand or message on social media platforms.",
+        "category": "services"
+    },
+    {
+        "id": "04",
+        "name": "EdTech Classroom",
+        "description": "Leverage educational technology tools and platforms to enhance the learning experience in a classroom setting.",
+        "category": "services"
+    },
+    {
+        "id": "05",
+        "name": "Photo Shoot",
+        "description": "Capture professional-quality photographs for various purposes, such as product shots, portraits, or event coverage.",
+        "category": "services"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "01",
+        "name": "Silver",
+        "description": "A shiny white precious metal often used in jewelry and tableware."
+    },
+    {
+        "id": "02",
+        "name": "Gold",
+        "description": "A soft, yellow precious metal often used in jewelry, coins, and electronics."
+    },
+    {
+        "id": "03",
+        "name": "Diamond",
+        "description": "The hardest naturally occurring substance known, often used as a gemstone."
+    },
+    {
+        "id": "04",
+        "name": "Bronze",
+        "description": "A hard alloy of copper and tin, often used in sculptures and tools."
+    },
+    {
+        "id": "05",
+        "name": "Platinum",
+        "description": "A dense, white precious metal often used in jewelry and industrial applications."
+    }
+]

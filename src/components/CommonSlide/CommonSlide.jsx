@@ -1,28 +1,55 @@
 'use client'
-import './CommonSlide';
-const CommonSlide = () => {
-    return (
-        <div className="lg:p-20">
-            <div className="hero  h-[400px] rounded-2xl" >
-                <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
-                    <div >
-                        <h1 className="mb-5 text-5xl font-bold uppercase">Services</h1>
-                        <div>
-                            <ul className="flex uppercase items-center justify-between space-x-4">
-                                <li>live streaming</li>
-                                <li>prodcast</li>
-                                <li>social media content</li>
-                                <li>edtech classroom</li>
-                                <li>photo  shoot</li>
-                            </ul>
-                        </div>
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-                    </div>
-                </div>
+
+
+const CommonSlide = ({ data, category }) => {
+
+    return (
+
+        <div className='border-2 rounded-lg m-10'>
+            <h1 className="my-5 text-4xl  text-center font-bold uppercase">
+                {category}
+            </h1>
+            <div className='m-8 text-center'>
+
+                <Swiper
+                    slidesPerView={4}
+                    centeredSlides={true}
+                    spaceBetween={30}
+                    grabCursor={true}
+                    pagination={{ clickable: true }}
+                    navigation={true}
+                    modules={[Navigation, Pagination,]}
+                    className="mySwiper"
+                >
+
+                    {
+                        data.map((item) => <SwiperSlide
+                            key={item.id}
+
+                        >
+                            <div className=' border-2 p-3 '>
+                                <h3 className='text-2xl uppercase font-semibold'>{item?.name} </h3>
+                                <p>{item?.description} </p>
+                            </div>
+                        </SwiperSlide>)
+                    }
+
+                </Swiper>
             </div>
+
         </div>
+
     );
 };
 
 export default CommonSlide;
+
+
+
+
