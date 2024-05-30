@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import CommonSlide from "../CommonSlide/CommonSlide";
 
 
-const ServiceSlider = ({ category }) => {
+const ServiceSlider = () => {
     const [seviceData, setSeviceData] = useState([]);
-    console.log(seviceData)
+
 
     useEffect(() => {
         const dataFetching = async () => {
@@ -14,7 +14,7 @@ const ServiceSlider = ({ category }) => {
                 const res = await fetch('service.json');
                 const data = await res.json();
                 setSeviceData(data)
-                console.log(data)
+
             } catch (error) {
                 console.log(error);
             }

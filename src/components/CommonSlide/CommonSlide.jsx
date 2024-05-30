@@ -33,8 +33,8 @@ const CommonSlide = ({ data, category }) => {
                             key={item.id}
 
                         >
-                            <div className=' border-2 p-3 '>
-                                <h3 className='text-2xl uppercase font-semibold'>{item?.name} </h3>
+                            <div className=' border-2 p-3  h-[240px] '>
+                                <h3 className='text-2xl uppercase mb-2 font-semibold'>{item?.name} </h3>
                                 <p>{item?.description} </p>
                             </div>
                         </SwiperSlide>)
