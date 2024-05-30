@@ -10,14 +10,14 @@ import photo6 from '../../assets/gallery/pohoto (6).jpg';
 
 const OfficeView = () => {
     return (
-        <div className='uppercase text-center m-20 p-10'>
+        <div className='uppercase text-center p-6 lg:m-20 lg:p-10'>
             <h2 className="text-4xl font-bold  my-12 ">Office View</h2>
-            <div className="flex justify-around items-center gap-8">
+            <div className="lg:flex justify-around items-center gap-8">
                 <div className=" w-full  rounded-lg">
                     <Map></Map>
                 </div>
-                <div className="  w-full  rounded-lg  ">
-                    <div className="grid grid-cols-2 gap-0  ">
+                <div className=" w-full  rounded-lg mt-5 lg:mt-0  ">
+                    <div className="grid grid-cols-2 gap-2 shadow-2xl ">
                         <Image src={photo1} alt="gellary"></Image>
                         <Image src={photo2} alt="gellary"></Image>
                         <Image src={photo3} alt="gellary"></Image>

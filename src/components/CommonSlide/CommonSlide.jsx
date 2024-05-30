@@ -8,17 +8,23 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 const CommonSlide = ({ data, category }) => {
+    const screenSize = window.screen.width;
+    let slidesPerViewIndex = 4;
+
+    if (screenSize <= 640) {
+        slidesPerViewIndex = 1;
+    }
 
     return (
 
-        <div className='border-2 rounded-lg m-10'>
+        <div className='border-2 rounded-lg lg:m-10'>
             <h1 className="my-5 text-4xl  text-center font-bold uppercase">
                 {category}
             </h1>
-            <div className='m-8 text-center'>
+            <div className=' lg:m-8 text-center'>
 
                 <Swiper
-                    slidesPerView={4}
+                    slidesPerView={slidesPerViewIndex}
                     centeredSlides={true}
                     spaceBetween={30}
                     grabCursor={true}
@@ -35,8 +41,8 @@ const CommonSlide = ({ data, category }) => {
                             key={item.id}
 
                         >
-                            <div className=' border-2 p-3  h-[240px] '>
-                                <h3 className='text-2xl uppercase mb-2 font-semibold'>{item?.name} </h3>
+                            <div className=' border-2 lg:p-3  h-[240px] '>
+                                <h3 className=' text-2xl uppercase mb-2 font-semibold'>{item?.name} </h3>
                                 <p>{item?.description} </p>
                             </div>
                         </SwiperSlide>)

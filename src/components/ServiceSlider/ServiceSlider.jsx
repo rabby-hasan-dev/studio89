@@ -30,7 +30,7 @@ const ServiceSlider = () => {
 
     return (
 
-        <div className="m-20">
+        <div className="lg:m-20 m-6">
 
             <CommonSlide data={seviceData} category={"services"}></CommonSlide>
 

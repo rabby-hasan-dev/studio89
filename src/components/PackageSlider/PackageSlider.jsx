@@ -15,7 +15,7 @@ const PackageSlider = () => {
                 const res = await fetch('packageData.json');
                 const data = await res.json();
                 setSeviceData(data)
-               
+
             } catch (error) {
                 console.log(error);
             }
@@ -31,7 +31,7 @@ const PackageSlider = () => {
 
     return (
 
-        <div className="m-20">
+        <div className="lg:m-20 p-6">
             <CommonSlide data={seviceData} category={"packages"}></CommonSlide>
         </div>
 
