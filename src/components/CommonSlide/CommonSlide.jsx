@@ -10,13 +10,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const CommonSlide = ({ data, category }) => {
     const screenSize = window.screen.width;
     let slidesPerViewIndex;
-
     if (screenSize <= 640) {
         slidesPerViewIndex = 1;
     } else {
         slidesPerViewIndex = 4;
     }
-
     return (
 
         <div className='border-2 rounded-lg lg:m-10'>
