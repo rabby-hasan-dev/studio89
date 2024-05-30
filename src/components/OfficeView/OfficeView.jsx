@@ -12,11 +12,9 @@ const OfficeView = () => {
     return (
         <div className='uppercase text-center m-20 p-10'>
             <h2 className="text-4xl font-bold  my-12 ">Office View</h2>
-            <div className="flex justify-around items-center gap-8 text-yellow-300 ">
+            <div className="flex justify-around items-center gap-8">
                 <div className=" w-full  rounded-lg">
-
                     <Map></Map>
-
                 </div>
                 <div className="  w-full  rounded-lg  ">
                     <div className="grid grid-cols-2 gap-0  ">
@@ -27,8 +25,6 @@ const OfficeView = () => {
                         <Image src={photo5} alt="gellary"></Image>
                         <Image src={photo6} alt="gellary"></Image>
                     </div>
-
-
                 </div>
 
             </div>

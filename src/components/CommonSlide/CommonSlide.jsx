@@ -24,12 +24,14 @@ const CommonSlide = ({ data, category }) => {
                     grabCursor={true}
                     pagination={{ clickable: true }}
                     navigation={true}
+                    initialSlide={1}
                     modules={[Navigation, Pagination,]}
                     className="mySwiper"
                 >
 
                     {
                         data.map((item) => <SwiperSlide
+                            slot='container-start'
                             key={item.id}
 
                         >
