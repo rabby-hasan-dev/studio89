@@ -8,13 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 const CommonSlide = ({ data, category }) => {
-    const screenSize = window.screen.width;
-    let slidesPerViewIndex;
-    if (screenSize <= 640) {
-        slidesPerViewIndex = 1;
-    } else {
-        slidesPerViewIndex = 4;
-    }
+
     return (
 
         <div className='border-2 rounded-lg lg:m-10'>
@@ -24,7 +18,20 @@ const CommonSlide = ({ data, category }) => {
             <div className=' lg:m-8 text-center'>
 
                 <Swiper
-                    slidesPerView={slidesPerViewIndex}
+                    breakpoints={{
+                        576: {
+                            width: 576,
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            width: 768,
+                            slidesPerView: 3,
+                        },
+                        1024: {
+                            width: 1024,
+                            slidesPerView: 4,
+                        },
+                    }}
                     centeredSlides={true}
                     spaceBetween={30}
                     grabCursor={true}
